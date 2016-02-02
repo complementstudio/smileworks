@@ -1,0 +1,81 @@
+<h3 class="page-tab">Schedule An Appointment</h3>
+<h1 class="treatments-heading">Schedule your appointment today with Smileworks</h1>
+<p>To request an appointment online, please fill out the form provided below and click the Submit button.</p>
+<p>A staff member will contact you to schedule your appointment.</p>
+<p><em>(Please note that if you leave a message or email us outside of our office hours, you will be contacted during our next business day)<br />
+</em></p>
+<div class="appointment-form full">
+<form name="catwebformform8749" method="post" onsubmit="return checkWholeForm8749(this)" enctype="multipart/form-data" action="/FormProcessv2.aspx?WebFormID=569037&amp;OID={module_oid}&amp;OTYPE={module_otype}&amp;EID={module_eid}&amp;CID={module_cid}">
+    <span class="req">*</span>  Required
+    <table class="webform" cellspacing="0" cellpadding="2" border="0">
+        <tbody>
+            <tr>
+                <td><label for="FirstName">First Name*<input type="text" name="FirstName" id="FirstName" class="cat_textbox" maxlength="255" /></label>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="LastName">Last Name*<input type="text" name="LastName" id="LastName" class="cat_textbox" maxlength="255" /></label>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="HomePhone">Phone Number*<input type="text" name="HomePhone" id="HomePhone" class="cat_textbox" maxlength="255" /></label>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="EmailAddress">Email Address*<input type="text" name="EmailAddress" id="EmailAddress" class="cat_textbox" maxlength="255" /></label>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="CAT_Custom_1661530">What treatment or service are you needing?*<textarea name="CAT_Custom_1661530" id="CAT_Custom_1661530" cols="10" rows="4" class="cat_listbox" onkeydown="if(this.value.length&gt;=4000)this.value=this.value.substring(0,3999);"></textarea></label><br />
+                </td>
+            </tr>
+            <tr>
+                <td><label for="CAT_Custom_1661531">Which day would you like to schedule your appointement?* <select name="CAT_Custom_1661531" id="CAT_Custom_1661531" class="cat_dropdown">
+                <option value=" ">-- Please select --</option>
+                <option value="Monday">Monday</option>
+                <option value="Tuesday">Tuesday</option>
+                <option value="Wednesday">Wednesday</option>
+                <option value="Thursday">Thursday</option>
+                </select></label></td>
+            </tr>
+            <tr>
+                <td><label for="CAT_Custom_1661532">How did you hear about us?*<select name="CAT_Custom_1661532" id="CAT_Custom_1661532" class="cat_dropdown">
+                <option value=" ">-- Please select --</option>
+                <option value="Referral from friend or family">Referral from friend or family</option>
+                <option value="Building / Signage">Building / Signage</option>
+                <option value="Dr. Lind's Staff">Dr. Lind's Staff</option>
+                <option value="Referral from another doctor or professional">Referral from another doctor or professional</option>
+                <option value="Google">Google</option>
+                <option value="Yahoo">Yahoo</option>
+                <option value="Bing">Bing</option>
+                <option value="Other website or web directory">Other website or web directory</option>
+                <option value="Magazine">Magazine</option>
+                <option value="Insurance">Insurance</option>
+                <option value="Other">Other</option>
+                </select></label>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="CAT_Custom_1661533">If from a referral, whom may we thank? <textarea name="CAT_Custom_1661533" id="CAT_Custom_1661533" cols="10" rows="4" class="cat_listbox" onkeydown="if(this.value.length&gt;=4000)this.value=this.value.substring(0,3999);"></textarea></label>
+                </td>
+            </tr>
+            <tr>
+                <td>{module_ccsecurity}</td>
+            </tr>
+            <tr>
+                <td><label>Enter Word Verification in box below*  {module_captchav2}</label>
+                </td>
+            </tr>
+            <tr>
+                <td><input class="cat_button" type="submit" value="Submit" id="catwebformbutton" /></td>
+            </tr>
+        </tbody>
+    </table>
+    <script type="text/javascript" src="/CatalystScripts/ValidationFunctions.js?vs=b1884.r475844-phase1"></script>
+    <script type="text/javascript">
+//<![CDATA[
+var submitcount8749 = 0;function checkWholeForm8749(theForm){var why = "";if (theForm.FirstName) why += isEmpty(theForm.FirstName.value, "First Name"); if (theForm.LastName) why += isEmpty(theForm.LastName.value, "Last Name"); if (theForm.HomePhone) why += isEmpty(theForm.HomePhone.value, "Home Phone Number"); if (theForm.EmailAddress) why += checkEmail(theForm.EmailAddress.value); if (theForm.CaptchaV2) why += captchaIsInvalid(theForm, "Enter Word Verification in box below", "Please enter the correct Word Verification as seen in the image"); if (theForm.CAT_Custom_1661530) why += isEmpty(theForm.CAT_Custom_1661530.value, "What treatment or service are you needing?");if (theForm.CAT_Custom_1661531) why += checkDropdown(theForm.CAT_Custom_1661531.value, "Which day would you like to schedule your appointement?*");if (theForm.CAT_Custom_1661532) why += checkDropdown(theForm.CAT_Custom_1661532.value, "How did you hear about us?");if(why != ""){alert(why);return false;}if(submitcount8749 == 0){submitcount8749++;theForm.submit();return false;}else{alert("Form submission is in progress.");return false;}}
+//]]>
+</script>
+</form>
+</div>
