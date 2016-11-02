@@ -1340,18 +1340,24 @@ table.beforeafter img.teeth {
 
 #page_top_item{
     background: #2078be;
+    width: 100%;
+    float: left;
 }
-#page_top_item ul{
+#page_top_item ul {
     text-align: center;
     color: #ffffff;
     font-size: 16px;
-    padding: 8px;
+    padding: 6px;
+    margin-bottom: 0;
+
 }
 #page_top_item ul li:first-child{
     border-right: 1px solid #fff;
 }
-#page_top_item ul li:last-child span{
+#page_top_item ul li:last-child a{
     font-family: 'OpenSansBold';
+    color: #ffffff;
+    text-decoration: none;
 }
 #page_top_item ul li:last-child  img{
     margin-right: 10px;
@@ -1363,7 +1369,7 @@ table.beforeafter img.teeth {
     max-width: 500px;
     vertical-align: middle;
 }
-.best_reward_section li p{
+.best_reward_section li span{
     color: #4a4a4a;
     font-size: 18px;
     line-height: 26px;
@@ -1376,7 +1382,7 @@ table.beforeafter img.teeth {
     margin-top: 25px;
 }
 .home_bg_section .home_bg_part{
-    background: url("../img/home_bg.jpg") no-repeat;
+    background-repeat: no-repeat;
     height: 500px;
     background-size: cover;
 
@@ -1418,7 +1424,7 @@ table.beforeafter img.teeth {
     font-family: 'OpenSansSemibold';
     text-align: center;
     text-decoration: none;
-    padding: 9px;
+    padding: 9px 0;
     margin-top: 20px;
 }
 .home_bg_section .home_banner .banner_text{
@@ -1474,8 +1480,9 @@ table.beforeafter img.teeth {
     line-height: 35px;
 }
 .home_patient_review .review_wrapper{
-  max-width: 1024px;
+  max-width: 1054px;
   margin: 0 auto;
+    padding: 0 15px;
 }
 .home_patient_review .review_author{
     text-align: right;
@@ -1495,6 +1502,7 @@ table.beforeafter img.teeth {
     color: #4a4a4a;
     font-size: 30px;
     margin-top: 0;
+    margin-bottom: 20px;
     font-family: 'OpenSansSemibold';
     text-align: center;
 }
@@ -1542,6 +1550,8 @@ table.beforeafter img.teeth {
     background-color: #f5a623;
     padding: 20px;
     margin-top: 30px;
+    width: 100%;
+    float: left;
 }
 .about_dental_section .first_block_text{
     color: #2078be;
@@ -1583,6 +1593,7 @@ table.beforeafter img.teeth {
 .about_dental_section  .about_team .blue_text{
     color: #2078be;
     font-size: 15px;
+    margin-top: 10px;
 }
 .about_dental_section .smile_plan_block ul li{
     font-size: 14px;
@@ -1591,7 +1602,9 @@ table.beforeafter img.teeth {
 }
 .about_dental_section .patient_links_block{
     background-color: #f2f2f2;
-    padding:5px  25px;
+    padding:15px  25px;
+    width: 100%;
+    float: left;
 }
 .about_dental_section .patient_links_block li a{
     color: #00a7e6;
@@ -1611,14 +1624,381 @@ table.beforeafter img.teeth {
     text-decoration: none;
     padding: 12px 18px;
 }
-.about_dental_section .patient_links_block ul{
-    padding: 20px 0;
-    border-bottom: 1px solid #fff;
-    margin-bottom: 0;
+/*.about_dental_section .patient_links_block ul{*/
+    /*padding: 20px 0;*/
+    /*border-bottom: 1px solid #fff;*/
+    /*margin-bottom: 0;*/
+/*}*/
+.col-md-offset-1 p {
+    margin: 0px 0px 70px;
 }
 a,a:hover{
     -webkit-transition: all 0.5s ease-in-out;
     transition: all 0.5s ease-in-out;
     -moz-transition: all 0.5s ease-in-out;
     -o-transition: all 0.5s ease-in-out;
+}
+.white_line{
+    display: block;
+    height: 1px;
+    background: #fff;
+    margin: 20px 0;
+}
+@media all and (max-width:1150px){
+    .menu_item .no-bg li a span {
+        font-size: 13px;
+        padding: 0px 10px;
+    }
+}
+@media (max-width: 1000px) {
+    .menu_item .no-bg li a span {
+        font-size: 10px;
+        padding: 0 5px;
+    }
+}
+@media (max-width: 800px) {
+    .navbar-header {
+        float: none !important;
+    }
+    .navbar-left,.navbar-right {
+        float: none !important;
+    }
+    .navbar-toggle {
+        display: block !important;
+    }
+    .navbar-fixed-top {
+        top: 0 !important;
+        border-width: 0 0 1px !important;
+    }
+    .navbar-collapse.collapse {
+        display: none!important;
+    }
+    .navbar-nav {
+        float: none!important;
+        margin-top: 7.5px !important;
+    }
+    .navbar-nav>li {
+        float: none !important;
+    }
+    .navbar-nav>li>a {
+        padding-top: 10px !important;
+        padding-bottom: 10px !important;
+    }
+    .collapse.in{
+        display:block !important;
+    }
+    .navbar-default .navbar-toggle .icon-bar{
+        background-color: #fff!important;
+    }
+}
+@media all and (max-width:800px){
+    .header .header_info_content,.header .header_logo_content{
+        width: 100%!important;
+    }
+    .header .header_info_content{
+        float: left!important;
+    }
+    .menu_item .no-bg li a span {
+        font-size: 15px;
+        padding: 0 15px;
+    }
+    .header .header_logo_content{
+        float: right!important;
+    }
+    .header .header_info_content ul{
+        text-align: left;
+
+        margin-bottom: 0;
+    }
+    .best_reward_section li span{
+        font-size: 12px;
+    }
+    .best_reward_section img{
+        width: 100px;
+    }
+    #page_top_item ul li:first-child{
+        font-size: 13px;
+    }
+    .menu_item{
+        position: absolute!important;
+        top: 40px;
+        left: 0;
+        width: 100%;
+        z-index: 3;
+    }
+    .logo{
+        margin-top: 0!important;
+    }
+    .menu_item .navbar-brand{
+        display: none;
+    }
+    .menu_item  .navbar-toggle,.menu_item  .navbar-toggle:hover,.menu_item  .navbar-toggle:focus{
+        float: left;
+        background: #16a8e3!important;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        border-radius: 10px;
+    }
+    .menu_item .no-bg-head{
+        background: transparent!important;
+    }
+    .menu_item .navbar-default .navbar-collapse{
+        margin-top: 0!important;
+    }
+    .menu_item .container-fluid > .navbar-collapse,.menu_item .container-fluid > .navbar-header{
+        margin: 0!important;
+    }
+    .menu_item .no-bg li:first-child a,.menu_item .no-bg li:last-child a{
+        -webkit-border-radius: 0!important;
+        -moz-border-radius: 0!important;
+        border-radius: 0!important;
+    }
+    .home_bg_section .home_banner{
+        width: 290px;
+    }
+    .home_bg_section .home_banner img{
+        width: 50px;
+    }
+    .home_bg_section .home_banner h2{
+        font-size: 23px;
+    }
+    .home_bg_section .home_banner .banner_price{
+        font-size: 52px;
+        margin-bottom: 0;
+    }
+    .home_bg_section .home_banner .banner_text,.home_bg_section .home_banner .banner_btn{
+        font-size: 13px;
+    }
+    .home_bg_section .home_bg_part{
+        height: 330px;
+    }
+    .home_bg_section .home_banner{
+        top: 20px;
+        right: 20px;
+    }
+    .home_view_patient_review h2{
+        font-size: 25px;
+    }
+    .home_view_patient_review p{
+        font-size: 21px;
+    }
+    .home_patient_review p{
+        font-size: 22px;
+    }
+    .home_patient_review .review_author{
+        margin-right: 0;
+    }
+    .dental_advantage .dental_advantage_blocks{
+        margin-bottom: 45px;
+    }
+    .about_dental_blocks.first_flock{
+        padding: 0!important;
+
+    }
+    .about_dental_section .about_dental_blocks.first_flock h3{
+        text-align: center;
+    }
+    .smile_plan_block h3{
+        text-align: left!important;
+    }
+    .about_team .about_team_part{
+        width: 50%;
+        float: left;
+    }
+    .about_team .about_team_part:last-child{
+        padding-left: 30px;
+    }
+    .about_dental_section .first_block_text{
+        max-width: 80%;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .about_dental_section .about_team .blue_text{
+        margin-top: 0;
+    }
+    .about_dental_section .patient_links_block ul li ul{
+        padding-right: 4%;
+        float: left;
+    }
+    .white_line{
+        display: none;
+    }
+    .about_dental_section .about_dental_blocks {
+        width: 100%;
+        float: left;
+        margin-bottom: 20px;
+    }
+    .no-bg li a span{
+        border-right: none!important;
+    }
+    .no-bg li a span{
+        font-size: 15px;
+    }
+    .about_dental_section .smile_plan_block div{
+        width: 50%;
+        float: left;
+    }
+    .about_dental_section .smile_plan_block .more_plan_btn{
+        margin-top: 30px;
+    }
+    .about_dental_section .container{
+        width: 100%!important;
+        padding: 0;
+    }
+}
+@media all and (max-width:750px){
+    #page_top_item ul li {
+        display: block;
+    }
+    .menu_item{
+        top: 70px;
+    }
+    #page_top_item ul li:first-child {
+        border-right: none;
+    }
+    .header .header_info_content ul{
+        padding-left: 50px;
+    }
+}
+@media all and (max-width:533px){
+    @media all and (max-width:750px){
+        .home_bg_section .home_banner{
+            position: relative;
+            width: 100%;
+            right: 0;
+            top: 0;
+            border: none;
+            border-top: 5px solid #EAEAEA!important;
+        }
+    }
+    .main-body .container{
+        padding: 0;
+    }
+    .about_dental_section .patient_links_block ul li ul{
+        width: 100%;
+        float: none!important;
+        text-align: center;
+    }
+    .about_dental_section .about_dental_blocks h3{
+        text-align: center;
+    }
+    .about_team .about_team_part{
+        width: 100%;
+        text-align: center;
+    }
+    .dental_advantage .dental_advantage_blocks{
+        text-align: center;
+        padding: 0!important;
+    }
+    .dental_advantage .dental_advantage_blocks img{
+        position: relative;
+    }
+    .about_dental_section .smile_plan_block div {
+        width: 100%;
+        text-align: center!important;
+    }
+    .smile_plan_block h3{
+        text-align: center!important;
+        margin-top: 10px!important;
+    }
+    .about_dental_section .smile_plan_block .more_plan_btn{
+        width: 100%;
+    }
+    .about_team .about_team_part:last-child{
+        padding-left: 0!important;
+    }
+    .about_dental_section .smile_plan_block .more_plan_btn{
+        margin-top: 0!important;
+    }
+    .about_dental_section .smile_plan_block ul li{
+        max-width: 100%;
+    }
+    .header .header_info_content {
+        display: none;
+    }
+    .header_logo_content .logo{
+        width: 225px;
+        float: right;
+    }
+    .menu_item{
+        top: 10%;
+        left: -15px;
+    }
+    #page_top_item ul{
+        text-align: left;
+    }
+    .home_view_patient_review h2{
+        font-size: 18px;
+    }
+    .home_view_patient_review p{
+        font-size: 16px;
+    }
+    .home_patient_review p {
+        font-size: 16px;
+        line-height: 27px;
+    }
+    .home_patient_review .review_author{
+        font-size: 16px;
+        text-align: center;
+    }
+    .home_banner ul li{
+        display: inline-block;
+        text-align: left;
+        vertical-align: middle;
+    }
+    .home_bg_section .home_banner h2{
+        font-size: 20px;
+    }
+    .home_bg_section .home_banner img {
+        width: 30px;
+        margin-right: 20px;
+    }
+    .home_bg_section .home_bg_part {
+        height: 130px;
+    }
+    .dental_advantage h2{
+        font-size: 25px;
+    }
+    .dental_advantage .dental_advantage_blocks h3{
+        font-size: 17px;
+    }
+    #page_top_item ul{
+        font-size: 12px;
+        max-width: 75%;
+        float: left;
+    }
+    #page_top_item ul li:last-child img{
+        display: none;
+    }
+    #page_top_item ul li:first-child {
+        font-size: 10px;
+        line-height: 15px;
+    }
+    .about_dental_section .about_team .blue_text {
+        margin-top: 10px;
+    }
+    .home_bg_section .slider_bottom_mobile_text{
+        display: block!important;
+        text-align: center;
+        padding: 10px 15px;
+        color: #4a4a4a;
+        font-size: 12px;
+    }
+    .home_bg_section .home_banner .banner_btn{
+        padding: 3px 0;
+    }
+    #page_top_item .top_item_mobile_img{
+        display: inline-block!important;
+        width: 25%;
+        float: right;
+        padding: 2%;
+        margin-top: 2%;
+        max-width: 90px;
+    }
+    .footer{
+        text-align: center;
+    }
+    .social.icon-footer{
+        float: none;
+    }
 }
